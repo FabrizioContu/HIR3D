@@ -16,3 +16,6 @@ La aplicación permite a los usuarios seleccionar una especialización y un nive
 #### Tecnologías Usadas
 
 React.js: // Tailwind CSS // React Router
+
+##### Contribución
+Si deseas contribuir, por favor abre un issue o envía un pull request con tus mejoras.
