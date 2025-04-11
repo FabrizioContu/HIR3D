@@ -1,6 +1,6 @@
 # Entrevista AI - Simulador de Preguntas
 
-Este proyecto es una aplicación web interactiva diseñada para generar preguntas personalizadas basadas en la descripción de un puesto de trabajo, ayudando a los usuarios a practicar para entrevistas de trabajo. A través de un enfoque de inteligencia artificial (IA), el simulador ajusta las preguntas según el nivel de experiencia y la especialización deseada.
+El objetivo de este proyecto es crear una aplicación web interactiva diseñada para generar preguntas personalizadas basadas en la descripción de un puesto de trabajo, ayudando a los usuarios a practicar para entrevistas de trabajo. A través de un enfoque de inteligencia artificial (IA), el simulador ajusta las preguntas según el nivel de experiencia y la especialización deseada. 
 
 ## Descripción
 
