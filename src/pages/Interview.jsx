@@ -1,7 +1,9 @@
-import React from "react";
+import Features from "../components/Features.jsx";
 
-function Interview() {
-  return <div>Interview</div>;
+export default function InterviewPage() {
+  return (
+    <div className="flex flex-col">
+      <Features />
+    </div>
+  );
 }
-
-export default Interview;
