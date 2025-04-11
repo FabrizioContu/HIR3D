@@ -1,12 +1,18 @@
-# React + Vite
+# Entrevista AI - Simulador de Preguntas
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es una aplicación web interactiva diseñada para generar preguntas personalizadas basadas en la descripción de un puesto de trabajo, ayudando a los usuarios a practicar para entrevistas de trabajo. A través de un enfoque de inteligencia artificial (IA), el simulador ajusta las preguntas según el nivel de experiencia y la especialización deseada.
 
-Currently, two official plugins are available:
+## Descripción
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+La aplicación permite a los usuarios seleccionar una especialización y un nivel de experiencia, para luego generar preguntas de entrevista con respuestas predeterminadas o de forma libre. Los usuarios pueden navegar entre las preguntas y practicar sus respuestas de forma dinámica.
 
-## Expanding the ESLint configuration
+### Características:
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Generación de preguntas personalizadas** basadas en la especialización y nivel de experiencia.
+- **Opciones de respuesta** con posibilidad de seleccionar respuestas predefinidas o escribir respuestas libres.
+- **Navegación entre preguntas** con botones para avanzar y retroceder.
+- **Interfaz amigable y responsive** para una mejor experiencia en dispositivos móviles y escritorio.
+
+#### Tecnologías Usadas
+
+React.js: // Tailwind CSS // React Router
