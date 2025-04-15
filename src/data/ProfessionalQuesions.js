@@ -278,376 +278,373 @@ export const PREGUNTAS = [
       },
     ],
   },
-  [
-    {
-      especialidad: "Data Analyst",
-      nivel: "Junior",
-      preguntas: [
-        {
-          pregunta:
-            "¿Qué es una tabla dinámica en Excel y para qué se utiliza?",
-          opciones: [
-            "Para hacer gráficos rápidamente.",
-            "Para resumir y analizar grandes cantidades de datos de forma interactiva.",
-            "Para almacenar información en la nube.",
-          ],
-        },
-        {
-          pregunta: "¿Qué es una consulta SQL básica?",
-          opciones: [
-            "Un script de Python.",
-            "Una petición para insertar datos automáticamente.",
-            "Una instrucción para obtener información específica de una base de datos.",
-          ],
-        },
-        {
-          pregunta: "¿Qué es la limpieza de datos?",
-          opciones: [
-            "Es eliminar los archivos innecesarios del sistema.",
-            "Es el proceso de detectar y corregir errores o inconsistencias en los datos.",
-            "Es borrar todos los datos antiguos de un archivo.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Data Analyst",
-      nivel: "Mid",
-      preguntas: [
-        {
-          pregunta:
-            "¿Cómo identificarías valores atípicos en un conjunto de datos?",
-          opciones: [
-            "Visualizando datos con boxplots o histograms.",
-            "Usando únicamente tablas dinámicas.",
-            "Ordenando los datos manualmente.",
-          ],
-        },
-        {
-          pregunta: "¿Qué función cumple una JOIN en SQL?",
-          opciones: [
-            "Combinar registros de dos o más tablas basadas en una columna relacionada.",
-            "Borrar registros duplicados.",
-            "Actualizar datos de múltiples tablas a la vez.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Qué herramienta usarías para crear dashboards interactivos?",
-          opciones: ["Tableau o Power BI.", "Notepad.", "Photoshop."],
-        },
-      ],
-    },
-    {
-      especialidad: "Data Analyst",
-      nivel: "Senior",
-      preguntas: [
-        {
-          pregunta:
-            "¿Cómo optimizas consultas SQL para grandes volúmenes de datos?",
-          opciones: [
-            "Usando índices, filtros y evitando subconsultas innecesarias.",
-            "Duplicando tablas.",
-            "Usando funciones matemáticas en todas las columnas.",
-          ],
-        },
-        {
-          pregunta: "¿Cómo manejarías datos faltantes en un análisis?",
-          opciones: [
-            "Imputando con la media, mediana o utilizando algoritmos de predicción.",
-            "Ignorando las filas vacías sin análisis.",
-            "Rellenando todos los valores con cero.",
-          ],
-        },
-        {
-          pregunta: "¿Cómo asegurarías la calidad de los datos?",
-          opciones: [
-            "Implementando validaciones, revisiones periódicas y controles automáticos.",
-            "Guardando los datos en hojas de Excel.",
-            "Preguntando al cliente si los datos son válidos.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Data Analyst",
-      nivel: "Expert",
-      preguntas: [
-        {
-          pregunta:
-            "¿Cómo diseñarías una arquitectura de análisis de datos escalable?",
-          opciones: [
-            "Utilizando pipelines de datos, bases de datos distribuidas y herramientas como Airflow.",
-            "Almacenando los datos en múltiples Excel compartidos.",
-            "Consultando los datos en tiempo real sin almacenarlos.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Cómo aplicarías estadística avanzada en el análisis de datos?",
-          opciones: [
-            "Utilizando regresión, pruebas de hipótesis, y modelos de inferencia.",
-            "Aplicando filtros manuales a los datos.",
-            "Agrupando datos visualmente.",
-          ],
-        },
-        {
-          pregunta: "¿Qué técnicas usarías para detectar sesgos en los datos?",
-          opciones: [
-            "Revisar la representatividad de la muestra y aplicar análisis exploratorio.",
-            "Utilizar dashboards con colores llamativos.",
-            "Comparar archivos CSV entre sí.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Data Scientist",
-      nivel: "Junior",
-      preguntas: [
-        {
-          pregunta: "¿Qué es la regresión lineal?",
-          opciones: [
-            "Un algoritmo de clasificación.",
-            "Un modelo estadístico para predecir valores continuos.",
-            "Una base de datos para almacenar datos numéricos.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Qué herramienta se usa comúnmente para análisis de datos en Python?",
-          opciones: ["Pandas.", "React.", "Photoshop."],
-        },
-        {
-          pregunta: "¿Qué representa una matriz de confusión?",
-          opciones: [
-            "Una forma de evaluar la precisión de un modelo de clasificación.",
-            "Una tabla de Excel con datos desordenados.",
-            "Un tipo de gráfico de barras.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Data Scientist",
-      nivel: "Mid",
-      preguntas: [
-        {
-          pregunta: "¿Cuál es la diferencia entre overfitting y underfitting?",
-          opciones: [
-            "Overfitting es cuando el modelo se ajusta demasiado a los datos de entrenamiento, underfitting es cuando no se ajusta lo suficiente.",
-            "Overfitting es cuando el modelo se ejecuta más rápido.",
-            "Underfitting es cuando el modelo se detiene antes de tiempo.",
-          ],
-        },
-        {
-          pregunta: "¿Qué es el preprocesamiento de datos?",
-          opciones: [
-            "La preparación de los datos para el modelado, incluyendo normalización y limpieza.",
-            "El proceso de exportar gráficos.",
-            "La parte visual del análisis.",
-          ],
-        },
-        {
-          pregunta: "¿Qué algoritmos usarías para clasificación?",
-          opciones: [
-            "Random Forest, KNN, Logistic Regression.",
-            "Linear Regression, K-means.",
-            "SQLite y Redis.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Data Scientist",
-      nivel: "Senior",
-      preguntas: [
-        {
-          pregunta: "¿Cómo evaluarías el rendimiento de un modelo?",
-          opciones: [
-            "Utilizando métricas como precisión, recall, F1-score y AUC-ROC.",
-            "Solo viendo la precisión general.",
-            "Observando los gráficos generados.",
-          ],
-        },
-        {
-          pregunta: "¿Qué técnica usarías para reducir la dimensionalidad?",
-          opciones: [
-            "PCA (Análisis de Componentes Principales).",
-            "Unir columnas similares.",
-            "Dividir los datos en más filas.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Qué papel juega el feature engineering en Machine Learning?",
-          opciones: [
-            "Es esencial para mejorar la calidad del modelo, transformando datos brutos en atributos relevantes.",
-            "Es opcional, solo para análisis exploratorios.",
-            "No afecta mucho a los resultados del modelo.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Data Scientist",
-      nivel: "Expert",
-      preguntas: [
-        {
-          pregunta:
-            "¿Cómo gestionarías un pipeline completo de Machine Learning en producción?",
-          opciones: [
-            "Automatizando etapas con herramientas como MLflow o Kubeflow.",
-            "Ejecutando los scripts manualmente.",
-            "Generando reportes en Excel.",
-          ],
-        },
-        {
-          pregunta: "¿Qué importancia tiene el versionado de modelos?",
-          opciones: [
-            "Permite controlar cambios y reproducir resultados en producción.",
-            "Solo sirve para desarrollo inicial.",
-            "No es necesario en la práctica.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Qué tipo de validación cruzada aplicarías en un conjunto de datos muy desbalanceado?",
-          opciones: [
-            "Stratified K-Fold.",
-            "Random Split.",
-            "Leave-One-Out Cross Validation.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Software Engineer",
-      nivel: "Junior",
-      preguntas: [
-        {
-          pregunta: "¿Qué es el control de versiones?",
-          opciones: [
-            "Una técnica para rastrear y gestionar cambios en el código fuente.",
-            "Una forma de cambiar el lenguaje de programación.",
-            "Una carpeta donde se guardan backups del código.",
-          ],
-        },
-        {
-          pregunta: "¿Para qué se usa Git?",
-          opciones: [
-            "Para gestionar versiones de código y colaborar en equipo.",
-            "Para crear imágenes.",
-            "Para compilar código automáticamente.",
-          ],
-        },
-        {
-          pregunta: "¿Qué es una función?",
-          opciones: [
-            "Una secuencia de instrucciones que realiza una tarea específica.",
-            "Un archivo de configuración.",
-            "Un tipo de variable.",
-          ],
-        },
-      ],
-    },
-  ],
-  [
-    {
-      especialidad: "Software Engineer",
-      nivel: "Mid",
-      preguntas: [
-        {
-          pregunta:
-            "¿Cuál es la diferencia entre programación sincrónica y asincrónica?",
-          opciones: [
-            "La programación asincrónica permite ejecutar tareas en paralelo sin bloquear el hilo principal.",
-            "La programación sincrónica es más moderna.",
-            "Ambas se ejecutan al mismo tiempo siempre.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Qué es el principio de responsabilidad única (SRP) en SOLID?",
-          opciones: [
-            "Cada módulo o clase debe tener una única razón para cambiar.",
-            "Cada módulo debe ser capaz de hacer muchas tareas.",
-            "El código debe poder ejecutarse en una sola línea.",
-          ],
-        },
-        {
-          pregunta: "¿Qué es un test unitario?",
-          opciones: [
-            "Una prueba para verificar el correcto funcionamiento de una unidad específica de código.",
-            "Un test que se ejecuta una vez al año.",
-            "Una función que mide el rendimiento del sistema.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Software Engineer",
-      nivel: "Senior",
-      preguntas: [
-        {
-          pregunta:
-            "¿Qué patrón de arquitectura seguirías para construir una API escalable?",
-          opciones: [
-            "Arquitectura basada en microservicios.",
-            "Monolito con funciones anidadas.",
-            "Solo REST sin ningún patrón arquitectónico.",
-          ],
-        },
-        {
-          pregunta: "¿Cómo gestionas la deuda técnica en un proyecto?",
-          opciones: [
-            "Priorizando tareas técnicas en el backlog, realizando refactorizaciones y documentando el impacto.",
-            "Ignorándola hasta que sea urgente.",
-            "Eliminando código sin avisar.",
-          ],
-        },
-        {
-          pregunta: "¿Qué son los principios DRY y KISS?",
-          opciones: [
-            "DRY: No te repitas. KISS: Manténlo simple.",
-            "DRY: No uses interfaces. KISS: Escribe código complejo.",
-            "Son acrónimos de tecnologías obsoletas.",
-          ],
-        },
-      ],
-    },
-    {
-      especialidad: "Software Engineer",
-      nivel: "Expert",
-      preguntas: [
-        {
-          pregunta:
-            "¿Cómo implementarías CI/CD en un proyecto con múltiples microservicios?",
-          opciones: [
-            "Configurando pipelines automatizados por servicio, orquestados con herramientas como Jenkins, GitHub Actions o GitLab CI.",
-            "Haciendo deploy manual una vez al mes.",
-            "Copiando y pegando los binarios en producción.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Qué estrategia seguirías para asegurar escalabilidad horizontal en tu aplicación?",
-          opciones: [
-            "Diseñar servicios sin estado (stateless) y balancear la carga entre instancias.",
-            "Usar una sola máquina muy potente.",
-            "Aumentar la base de datos en un solo servidor.",
-          ],
-        },
-        {
-          pregunta:
-            "¿Qué técnicas aplicarías para mejorar el rendimiento de una aplicación crítica?",
-          opciones: [
-            "Profiling, caching, lazy loading, y optimización de consultas.",
-            "Eliminar funciones no utilizadas.",
-            "Reescribir toda la app desde cero cada vez.",
-          ],
-        },
-      ],
-    },
-  ],
+
+  {
+    especialidad: "Data Analyst",
+    nivel: "Junior",
+    preguntas: [
+      {
+        pregunta: "¿Qué es una tabla dinámica en Excel y para qué se utiliza?",
+        opciones: [
+          "Para hacer gráficos rápidamente.",
+          "Para resumir y analizar grandes cantidades de datos de forma interactiva.",
+          "Para almacenar información en la nube.",
+        ],
+      },
+      {
+        pregunta: "¿Qué es una consulta SQL básica?",
+        opciones: [
+          "Un script de Python.",
+          "Una petición para insertar datos automáticamente.",
+          "Una instrucción para obtener información específica de una base de datos.",
+        ],
+      },
+      {
+        pregunta: "¿Qué es la limpieza de datos?",
+        opciones: [
+          "Es eliminar los archivos innecesarios del sistema.",
+          "Es el proceso de detectar y corregir errores o inconsistencias en los datos.",
+          "Es borrar todos los datos antiguos de un archivo.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Data Analyst",
+    nivel: "Mid",
+    preguntas: [
+      {
+        pregunta:
+          "¿Cómo identificarías valores atípicos en un conjunto de datos?",
+        opciones: [
+          "Visualizando datos con boxplots o histograms.",
+          "Usando únicamente tablas dinámicas.",
+          "Ordenando los datos manualmente.",
+        ],
+      },
+      {
+        pregunta: "¿Qué función cumple una JOIN en SQL?",
+        opciones: [
+          "Combinar registros de dos o más tablas basadas en una columna relacionada.",
+          "Borrar registros duplicados.",
+          "Actualizar datos de múltiples tablas a la vez.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Qué herramienta usarías para crear dashboards interactivos?",
+        opciones: ["Tableau o Power BI.", "Notepad.", "Photoshop."],
+      },
+    ],
+  },
+  {
+    especialidad: "Data Analyst",
+    nivel: "Senior",
+    preguntas: [
+      {
+        pregunta:
+          "¿Cómo optimizas consultas SQL para grandes volúmenes de datos?",
+        opciones: [
+          "Usando índices, filtros y evitando subconsultas innecesarias.",
+          "Duplicando tablas.",
+          "Usando funciones matemáticas en todas las columnas.",
+        ],
+      },
+      {
+        pregunta: "¿Cómo manejarías datos faltantes en un análisis?",
+        opciones: [
+          "Imputando con la media, mediana o utilizando algoritmos de predicción.",
+          "Ignorando las filas vacías sin análisis.",
+          "Rellenando todos los valores con cero.",
+        ],
+      },
+      {
+        pregunta: "¿Cómo asegurarías la calidad de los datos?",
+        opciones: [
+          "Implementando validaciones, revisiones periódicas y controles automáticos.",
+          "Guardando los datos en hojas de Excel.",
+          "Preguntando al cliente si los datos son válidos.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Data Analyst",
+    nivel: "Expert",
+    preguntas: [
+      {
+        pregunta:
+          "¿Cómo diseñarías una arquitectura de análisis de datos escalable?",
+        opciones: [
+          "Utilizando pipelines de datos, bases de datos distribuidas y herramientas como Airflow.",
+          "Almacenando los datos en múltiples Excel compartidos.",
+          "Consultando los datos en tiempo real sin almacenarlos.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Cómo aplicarías estadística avanzada en el análisis de datos?",
+        opciones: [
+          "Utilizando regresión, pruebas de hipótesis, y modelos de inferencia.",
+          "Aplicando filtros manuales a los datos.",
+          "Agrupando datos visualmente.",
+        ],
+      },
+      {
+        pregunta: "¿Qué técnicas usarías para detectar sesgos en los datos?",
+        opciones: [
+          "Revisar la representatividad de la muestra y aplicar análisis exploratorio.",
+          "Utilizar dashboards con colores llamativos.",
+          "Comparar archivos CSV entre sí.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Data Scientist",
+    nivel: "Junior",
+    preguntas: [
+      {
+        pregunta: "¿Qué es la regresión lineal?",
+        opciones: [
+          "Un algoritmo de clasificación.",
+          "Un modelo estadístico para predecir valores continuos.",
+          "Una base de datos para almacenar datos numéricos.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Qué herramienta se usa comúnmente para análisis de datos en Python?",
+        opciones: ["Pandas.", "React.", "Photoshop."],
+      },
+      {
+        pregunta: "¿Qué representa una matriz de confusión?",
+        opciones: [
+          "Una forma de evaluar la precisión de un modelo de clasificación.",
+          "Una tabla de Excel con datos desordenados.",
+          "Un tipo de gráfico de barras.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Data Scientist",
+    nivel: "Mid",
+    preguntas: [
+      {
+        pregunta: "¿Cuál es la diferencia entre overfitting y underfitting?",
+        opciones: [
+          "Overfitting es cuando el modelo se ajusta demasiado a los datos de entrenamiento, underfitting es cuando no se ajusta lo suficiente.",
+          "Overfitting es cuando el modelo se ejecuta más rápido.",
+          "Underfitting es cuando el modelo se detiene antes de tiempo.",
+        ],
+      },
+      {
+        pregunta: "¿Qué es el preprocesamiento de datos?",
+        opciones: [
+          "La preparación de los datos para el modelado, incluyendo normalización y limpieza.",
+          "El proceso de exportar gráficos.",
+          "La parte visual del análisis.",
+        ],
+      },
+      {
+        pregunta: "¿Qué algoritmos usarías para clasificación?",
+        opciones: [
+          "Random Forest, KNN, Logistic Regression.",
+          "Linear Regression, K-means.",
+          "SQLite y Redis.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Data Scientist",
+    nivel: "Senior",
+    preguntas: [
+      {
+        pregunta: "¿Cómo evaluarías el rendimiento de un modelo?",
+        opciones: [
+          "Utilizando métricas como precisión, recall, F1-score y AUC-ROC.",
+          "Solo viendo la precisión general.",
+          "Observando los gráficos generados.",
+        ],
+      },
+      {
+        pregunta: "¿Qué técnica usarías para reducir la dimensionalidad?",
+        opciones: [
+          "PCA (Análisis de Componentes Principales).",
+          "Unir columnas similares.",
+          "Dividir los datos en más filas.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Qué papel juega el feature engineering en Machine Learning?",
+        opciones: [
+          "Es esencial para mejorar la calidad del modelo, transformando datos brutos en atributos relevantes.",
+          "Es opcional, solo para análisis exploratorios.",
+          "No afecta mucho a los resultados del modelo.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Data Scientist",
+    nivel: "Expert",
+    preguntas: [
+      {
+        pregunta:
+          "¿Cómo gestionarías un pipeline completo de Machine Learning en producción?",
+        opciones: [
+          "Automatizando etapas con herramientas como MLflow o Kubeflow.",
+          "Ejecutando los scripts manualmente.",
+          "Generando reportes en Excel.",
+        ],
+      },
+      {
+        pregunta: "¿Qué importancia tiene el versionado de modelos?",
+        opciones: [
+          "Permite controlar cambios y reproducir resultados en producción.",
+          "Solo sirve para desarrollo inicial.",
+          "No es necesario en la práctica.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Qué tipo de validación cruzada aplicarías en un conjunto de datos muy desbalanceado?",
+        opciones: [
+          "Stratified K-Fold.",
+          "Random Split.",
+          "Leave-One-Out Cross Validation.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Software Engineer",
+    nivel: "Junior",
+    preguntas: [
+      {
+        pregunta: "¿Qué es el control de versiones?",
+        opciones: [
+          "Una técnica para rastrear y gestionar cambios en el código fuente.",
+          "Una forma de cambiar el lenguaje de programación.",
+          "Una carpeta donde se guardan backups del código.",
+        ],
+      },
+      {
+        pregunta: "¿Para qué se usa Git?",
+        opciones: [
+          "Para gestionar versiones de código y colaborar en equipo.",
+          "Para crear imágenes.",
+          "Para compilar código automáticamente.",
+        ],
+      },
+      {
+        pregunta: "¿Qué es una función?",
+        opciones: [
+          "Una secuencia de instrucciones que realiza una tarea específica.",
+          "Un archivo de configuración.",
+          "Un tipo de variable.",
+        ],
+      },
+    ],
+  },
+
+  {
+    especialidad: "Software Engineer",
+    nivel: "Mid",
+    preguntas: [
+      {
+        pregunta:
+          "¿Cuál es la diferencia entre programación sincrónica y asincrónica?",
+        opciones: [
+          "La programación asincrónica permite ejecutar tareas en paralelo sin bloquear el hilo principal.",
+          "La programación sincrónica es más moderna.",
+          "Ambas se ejecutan al mismo tiempo siempre.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Qué es el principio de responsabilidad única (SRP) en SOLID?",
+        opciones: [
+          "Cada módulo o clase debe tener una única razón para cambiar.",
+          "Cada módulo debe ser capaz de hacer muchas tareas.",
+          "El código debe poder ejecutarse en una sola línea.",
+        ],
+      },
+      {
+        pregunta: "¿Qué es un test unitario?",
+        opciones: [
+          "Una prueba para verificar el correcto funcionamiento de una unidad específica de código.",
+          "Un test que se ejecuta una vez al año.",
+          "Una función que mide el rendimiento del sistema.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Software Engineer",
+    nivel: "Senior",
+    preguntas: [
+      {
+        pregunta:
+          "¿Qué patrón de arquitectura seguirías para construir una API escalable?",
+        opciones: [
+          "Arquitectura basada en microservicios.",
+          "Monolito con funciones anidadas.",
+          "Solo REST sin ningún patrón arquitectónico.",
+        ],
+      },
+      {
+        pregunta: "¿Cómo gestionas la deuda técnica en un proyecto?",
+        opciones: [
+          "Priorizando tareas técnicas en el backlog, realizando refactorizaciones y documentando el impacto.",
+          "Ignorándola hasta que sea urgente.",
+          "Eliminando código sin avisar.",
+        ],
+      },
+      {
+        pregunta: "¿Qué son los principios DRY y KISS?",
+        opciones: [
+          "DRY: No te repitas. KISS: Manténlo simple.",
+          "DRY: No uses interfaces. KISS: Escribe código complejo.",
+          "Son acrónimos de tecnologías obsoletas.",
+        ],
+      },
+    ],
+  },
+  {
+    especialidad: "Software Engineer",
+    nivel: "Expert",
+    preguntas: [
+      {
+        pregunta:
+          "¿Cómo implementarías CI/CD en un proyecto con múltiples microservicios?",
+        opciones: [
+          "Configurando pipelines automatizados por servicio, orquestados con herramientas como Jenkins, GitHub Actions o GitLab CI.",
+          "Haciendo deploy manual una vez al mes.",
+          "Copiando y pegando los binarios en producción.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Qué estrategia seguirías para asegurar escalabilidad horizontal en tu aplicación?",
+        opciones: [
+          "Diseñar servicios sin estado (stateless) y balancear la carga entre instancias.",
+          "Usar una sola máquina muy potente.",
+          "Aumentar la base de datos en un solo servidor.",
+        ],
+      },
+      {
+        pregunta:
+          "¿Qué técnicas aplicarías para mejorar el rendimiento de una aplicación crítica?",
+        opciones: [
+          "Profiling, caching, lazy loading, y optimización de consultas.",
+          "Eliminar funciones no utilizadas.",
+          "Reescribir toda la app desde cero cada vez.",
+        ],
+      },
+    ],
+  },
 ];

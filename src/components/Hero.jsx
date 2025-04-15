@@ -7,7 +7,7 @@ function Hero() {
     <div>
       <section className="border-b border-gray-200 bg-gray-50 h-dvh">
         <div className=" mx-auto max-w-screen-xl gap-4 px-4 py-8 sm:px-6 sm:py-12 lg:px-8 bg-blue-900 flex flex-col justify-center items-center rounded-sm">
-          <div className="gap-4 py-16 grid grid-cols-6 text-center mb-5">
+          <div className="gap-4 pt-24 pb-16 grid grid-cols-6 text-center mb-5">
             <h1 className="col-span-4 col-start-2 md:text-6xl font-bold text-gray-50 text-3xl">
               Calienta motores con nuestra Entrevista de IA
             </h1>
@@ -28,7 +28,7 @@ function Hero() {
           </div>
         </div>
         <div
-          className="w-full py-8 pt-8 bg-blue-900 text-gray-50"
+          className=" mx-auto max-w-screen-xl py-8 pt-8 bg-blue-900 text-gray-50"
           aria-labelledby="features-heading"
         >
           <div className="container mx-auto px-4">
@@ -39,22 +39,22 @@ function Hero() {
               Todo lo que necesitas para tu próxima entrevista
             </h2>
             <div className="grid md:grid-cols-3 gap-8">
-              <div className="p-6 glass-effect card-hover bg-amber-50 rounded-md text-gray-600">
+              <div className="p-6 bg-gray-100 rounded-md text-gray-600">
                 <h3 className="text-xl font-semibold mb-3">Preguntas IA</h3>
-                <p className="text-muted-foreground text-spacing-optimized">
+                <p className="">
                   Genera preguntas personalizadas basadas en la descripción del
                   puesto
                 </p>
               </div>
-              <div className="p-6 glass-effect card-hover bg-amber-50 rounded-md text-gray-600">
+              <div className="p-6 bg-gray-100 rounded-md text-gray-600">
                 <h3 className="text-xl font-semibold mb-3">Personalización</h3>
-                <p className="text-muted-foreground text-spacing-optimized">
+                <p className="">
                   Adapta las preguntas según el nivel de experiencia y el idioma
                 </p>
               </div>
-              <div className="p-6 glass-effect card-hover bg-amber-50 rounded-md text-gray-600">
+              <div className="p-6 bg-gray-100 rounded-md text-gray-600">
                 <h3 className="text-xl font-semibold mb-3">Profesiones</h3>
-                <p className="text-muted-foreground text-spacing-optimized">
+                <p className="">
                   Especializadas para diferentes profesiones y roles de trabajo
                 </p>
               </div>
