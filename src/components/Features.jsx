@@ -87,13 +87,21 @@ export default function Features() {
         {questions.length > 0 && (
           <div className="mt-6 bg-white p-6 rounded-xl shadow-sm flex flex-col gap-6">
             {/* Pregunta */}
-            <h2 className=" text-base sm:text-lg font-bold text-gray-800 text-center">
+            <h2
+              className=" text-base sm:text-lg font-bold text-gray-800 text-center"
+              aria-live="polite"
+            >
               {questions[currentQuestion].pregunta}
             </h2>
 
             {/* Opciones de respuesta */}
             {!writing && (
-              <div className="flex flex-col gap-3">
+              <fieldset
+                className="flex flex-col gap-3"
+                aria-label="Opciones de respuesta"
+              >
+                <legend className="sr-only">Opciones de respuesta</legend>
+
                 {questions[currentQuestion].opciones.map((opcion, index) => (
                   <label
                     key={index}
@@ -103,27 +111,38 @@ export default function Features() {
                       type="radio"
                       name="respuesta"
                       className="accent-blue-500"
+                      aria-checked="false"
                     />
                     <span className="text-gray-700">{opcion}</span>
                   </label>
                 ))}
-              </div>
+              </fieldset>
             )}
 
             {/* Respuesta libre */}
             {writing && (
-              <textarea
-                className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400"
-                value={freeAnswer}
-                onChange={(e) => setFreeAnswer(e.target.value)}
-                placeholder="Escribe tu respuesta aquí..."
-              ></textarea>
+              <div>
+                <label htmlFor="respuesta-libre" className="sr-only">
+                  Escribe tu respuesta
+                </label>
+                <textarea
+                  id="respuesta-libre"
+                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400"
+                  value={freeAnswer}
+                  onChange={(e) => setFreeAnswer(e.target.value)}
+                  placeholder="Escribe tu respuesta aquí..."
+                  aria-label="Respuesta libre"
+                ></textarea>
+              </div>
             )}
 
             {/* Botón de cambio entre opciones y respuesta libre */}
             <button
               onClick={() => setWriting(!writing)}
               className="rounded-lg mx-auto w-40 bg-blue-500 py-2 text-white text-sm sm:text-base hover:bg-blue-600 transition"
+              aria-label={`Cambiar a ${
+                writing ? "opciones de respuesta" : "respuesta libre"
+              }`}
             >
               {writing ? "OPCIONES" : "RESPUESTA LIBRE"}
             </button>
@@ -133,7 +152,9 @@ export default function Features() {
               {currentQuestion >= 0 && (
                 <button
                   onClick={prevQuestion}
+                  disabled={currentQuestion === 0}
                   className="rounded-lg w-20 sm:w-24 px-3 py-2 text-xs sm:text-base text-gray-800 bg-gray-200 hover:bg-gray-300 border border-gray-400 transition"
+                  aria-label="Pregunta anterior"
                 >
                   ANTERIOR
                 </button>
@@ -143,11 +164,15 @@ export default function Features() {
                 <button
                   onClick={nextQuestion}
                   className="rounded-lg w-20 sm:w-24 text-xs    px-3 py-2 sm:text-base text-gray-800 bg-gray-200 hover:bg-gray-300 border border-gray-400 transition"
+                  aria-label="Siguiente pregunta"
                 >
                   SIGUIENTE
                 </button>
               ) : (
-                <button className="rounded-lg w-20 sm:w-24 text-xs sm:text-base px-3 py-2 bg-blue-500 text-white hover:bg-blue-600 transition">
+                <button
+                  className="rounded-lg w-20 sm:w-24 text-xs sm:text-base px-3 py-2 bg-blue-500 text-white hover:bg-blue-600 transition"
+                  aria-label="Finalizar preguntas"
+                >
                   TERMINAR
                 </button>
               )}
