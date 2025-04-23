@@ -1,5 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth } from "../context/AuthContext";
 
 const navItems = [
   {
@@ -13,13 +14,21 @@ const navItems = [
     url: "/features",
   },
   {
-    title: "Ejems",
+    title: "Ejemplos",
     label: "ejemplos",
     url: "/#ejemplos",
   },
 ];
 
 const Header = () => {
+  const { isAuthenticated, login, logout } = useAuth();
+  const navigate = useNavigate();
+
+  const handleLogin = () => {
+    login();
+    navigate("/dashboard");
+  };
+
   return (
     <header className="fixed top-0 z-10 grid grid-cols-9 justify-center items-center w-full mx-auto bg-gray-50 py-3">
       <Link className="col-span-1 col-start-2 font-bold" to="/">
@@ -36,6 +45,23 @@ const Header = () => {
             {link.title}
           </a>
         ))}
+      </nav>
+      <nav className="col-span-3 col-start-8">
+        {isAuthenticated ? (
+          <button
+            onClick={logout}
+            className="rounded-lg w-20 sm:w-24 text-xs sm:text-base px-3 py-2 bg-blue-500 text-white hover:bg-blue-600 transition"
+          >
+            LOGOUT
+          </button>
+        ) : (
+          <button
+            onClick={handleLogin}
+            className=" rounded-lg w-20 sm:w-24 text-xs sm:text-base px-3 py-2 bg-blue-500 text-white hover:bg-blue-600 transition"
+          >
+            LOGIN
+          </button>
+        )}
       </nav>
     </header>
   );
