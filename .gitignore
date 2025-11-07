@@ -4,6 +4,7 @@
 .env.*.local
 config.env
 secrets.json
+.env.hir3d---interview-simulator
 
 # Claves y certificados
 *.key
