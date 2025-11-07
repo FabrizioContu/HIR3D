@@ -43,3 +43,14 @@ Además, el sistema permite al usuario **responder libremente o con opciones pre
 - ESLint  
 - Prettier  
 
+
+## 🧪 Arquitectura
+
+```text
+Frontend (React)
+     │
+     ▼
+Firebase Functions (Node.js)
+     │
+     ▼
+Google Generative AI (Gemini API)
