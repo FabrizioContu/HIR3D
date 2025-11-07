@@ -1,10 +1,15 @@
 import React, { useState } from "react";
 import { PREGUNTAS, TAGS } from "../data/ProfessionalQuesions";
 import { useQuestions } from "../hooks/useQuestions";
+import { useAIAnalysis } from "../hooks/useAIAnalysis";
+import AnalysisResult from "./AnalysisResult";
 
 export default function Features() {
   const [especialidad, setEspecialidad] = useState("");
   const [nivel, setNivel] = useState("");
+
+  const { isAnalyzing, analysis, analyzeResponse, clearAnalysis } =
+    useAIAnalysis();
 
   const {
     questions,
@@ -93,7 +98,6 @@ export default function Features() {
             >
               {questions[currentQuestion].pregunta}
             </h2>
-
             {/* Opciones de respuesta */}
             {!writing && (
               <fieldset
@@ -118,7 +122,6 @@ export default function Features() {
                 ))}
               </fieldset>
             )}
-
             {/* Respuesta libre */}
             {writing && (
               <div>
@@ -135,8 +138,45 @@ export default function Features() {
                 ></textarea>
               </div>
             )}
+            {writing && (
+              <div>
+                <label htmlFor="respuesta-libre" className="sr-only">
+                  Escribe tu respuesta
+                </label>
+                <textarea
+                  id="respuesta-libre"
+                  className="w-full border border-gray-300 rounded-lg p-3 focus:ring-2 focus:ring-blue-400"
+                  value={freeAnswer}
+                  onChange={(e) => setFreeAnswer(e.target.value)}
+                  placeholder="Escribe tu respuesta aquí..."
+                  aria-label="Respuesta libre"
+                ></textarea>
 
-            {/* Botón de cambio entre opciones y respuesta libre */}
+                {/* NUEVO: Botón de análisis */}
+                <button
+                  onClick={() => {
+                    clearAnalysis();
+                    analyzeResponse(
+                      questions[currentQuestion].pregunta,
+                      freeAnswer,
+                      especialidad,
+                      nivel
+                    );
+                  }}
+                  disabled={isAnalyzing || !freeAnswer.trim()}
+                  className={`mt-3 w-full rounded-lg py-2 px-4 text-white transition ${
+                    isAnalyzing || !freeAnswer.trim()
+                      ? "bg-green-400 cursor-not-allowed"
+                      : "bg-green-500 hover:bg-green-600"
+                  }`}
+                >
+                  {isAnalyzing
+                    ? "Analizando con IA..."
+                    : "🤖 Analizar mi respuesta"}
+                </button>
+              </div>
+            )}
+            ;{/* Botón de cambio entre opciones y respuesta libre */}
             <button
               onClick={() => setWriting(!writing)}
               className="rounded-lg mx-auto w-40 bg-blue-500 py-2 text-white text-sm sm:text-base hover:bg-blue-600 transition"
@@ -146,7 +186,10 @@ export default function Features() {
             >
               {writing ? "OPCIONES" : "RESPUESTA LIBRE"}
             </button>
-
+            {/* Mostrar análisis */}
+            {analysis && (
+              <AnalysisResult analysis={analysis} onClose={clearAnalysis} />
+            )}
             {/* Botones de navegación */}
             <div className="flex justify-between">
               {currentQuestion >= 0 && (
