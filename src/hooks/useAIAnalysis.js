@@ -7,7 +7,7 @@ export const useAIAnalysis = () => {
   const [error, setError] = useState(null);
 
   const analyzeResponse = async (pregunta, respuesta, especialidad, nivel) => {
-    if (!respuesta || respuesta.trim().length === 0) {
+    if (!respuesta.length === 0) {
       setError("Por favor, escribe una respuesta antes de analizar");
       return;
     }
