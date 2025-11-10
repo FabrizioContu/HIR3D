@@ -1,21 +1,56 @@
-# Entrevista AI - Simulador de Preguntas
+# 🎯 Entrevista AI – Simulador de Preguntas
 
-El objetivo de este proyecto es crear una aplicación web interactiva diseñada para generar preguntas personalizadas basadas en la descripción de un puesto de trabajo, ayudando a los usuarios a practicar para entrevistas de trabajo. A través de un enfoque de inteligencia artificial (IA), el simulador ajusta las preguntas según el nivel de experiencia y la especialización deseada. 
+Una aplicación web interactiva impulsada por **Inteligencia Artificial (IA)** que genera preguntas personalizadas de entrevista basadas en la **descripción de un puesto de trabajo**, **nivel de experiencia** y **especialización**.  
+El objetivo es ayudar a los usuarios a **prepararse de forma efectiva para entrevistas técnicas** en diferentes campos profesionales.
 
-## Descripción
+---
 
-La aplicación permite a los usuarios seleccionar una especialización y un nivel de experiencia, para luego generar preguntas de entrevista con respuestas predeterminadas o de forma libre. Los usuarios pueden navegar entre las preguntas y practicar sus respuestas de forma dinámica.
+## 🧠 Descripción General
 
-### Características:
+**Entrevista AI** combina la generación de contenido con modelos de lenguaje de última generación para ofrecer una experiencia de práctica de entrevistas realista e interactiva.  
+El usuario puede elegir una especialización (por ejemplo, *Frontend Developer*, *Data Analyst*, *Software Engineer*, etc.) y un nivel (Junior, Mid, Senior, Expert) para recibir preguntas adaptadas a su perfil.
 
-- **Generación de preguntas personalizadas** basadas en la especialización y nivel de experiencia.
-- **Opciones de respuesta** con posibilidad de seleccionar respuestas predefinidas o escribir respuestas libres.
-- **Navegación entre preguntas** con botones para avanzar y retroceder.
-- **Interfaz amigable y responsive** para una mejor experiencia en dispositivos móviles y escritorio.
+Además, el sistema permite al usuario **responder libremente o con opciones predefinidas**, y obtiene **feedback inmediato generado por IA** sobre su respuesta.
 
-#### Tecnologías Usadas
+---
 
-React.js: // Tailwind CSS // React Router
+## ⚙️ Características Principales
 
-##### Contribución
-Si deseas contribuir, por favor abre un issue o envía un pull request con tus mejoras.
+- 💡 **Generación dinámica de preguntas** según especialidad y nivel.  
+- 🧩 **Evaluación automática** de respuestas mediante Gemini AI.  
+- ✍️ **Modo libre o guiado**: responde de forma abierta o seleccionando entre opciones.  
+- 🔄 **Navegación fluida** entre preguntas.  
+- 📱 **Diseño responsive y accesible** con Tailwind CSS.  
+- ☁️ **Integración con Firebase Functions** para comunicación segura con la API de IA.  
+
+---
+
+## 🧰 Tecnologías Utilizadas
+
+**Frontend**
+- React.js  
+- React Router  
+- Tailwind CSS  
+
+**Backend**
+- Firebase Functions (Node.js 22)  
+- Google Generative AI (Gemini API)  
+- Firebase Hosting  
+
+**Herramientas y Servicios**
+- Git / GitHub  
+- Vite  
+- ESLint  
+- Prettier  
+
+
+## 🧪 Arquitectura
+
+```text
+Frontend (React)
+     │
+     ▼
+Firebase Functions (Node.js)
+     │
+     ▼
+Google Generative AI (Gemini API)
