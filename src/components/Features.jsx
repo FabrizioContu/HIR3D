@@ -138,27 +138,6 @@ export default function Features() {
                   aria-label="Respuesta libre"
                 ></textarea>
                 // {/* NUEVO: Botón de análisis */}
-                <button
-                  onClick={() => {
-                    clearAnalysis();
-                    analyzeResponse(
-                      questions[currentQuestion].pregunta,
-                      freeAnswer,
-                      especialidad,
-                      nivel
-                    );
-                  }}
-                  disabled={isAnalyzing || !freeAnswer.trim()}
-                  className={`mt-3 w-full rounded-lg py-2 px-4 text-white transition ${
-                    isAnalyzing || !freeAnswer.trim()
-                      ? "bg-green-400 cursor-not-allowed"
-                      : "bg-green-500 hover:bg-green-600"
-                  }`}
-                >
-                  {isAnalyzing
-                    ? "Analizando con IA..."
-                    : "🤖 Analizar mi respuesta"}
-                </button>
               </div>
             )}
             {/* Botón de cambio entre opciones y respuesta libre */}
@@ -198,10 +177,25 @@ export default function Features() {
                 </button>
               ) : (
                 <button
-                  className="rounded-lg w-20 sm:w-24 text-xs sm:text-base px-3 py-2 bg-blue-500 text-white hover:bg-blue-600 transition"
-                  aria-label="Finalizar preguntas"
+                  onClick={() => {
+                    clearAnalysis();
+                    analyzeResponse(
+                      questions[currentQuestion].pregunta,
+                      freeAnswer,
+                      especialidad,
+                      nivel
+                    );
+                  }}
+                  disabled={isAnalyzing || !freeAnswer.trim()}
+                  className={`mt-3 w-full rounded-lg py-2 px-4 text-white transition ${
+                    isAnalyzing || !freeAnswer.trim()
+                      ? "bg-green-400 cursor-not-allowed"
+                      : "bg-green-500 hover:bg-green-600"
+                  }`}
                 >
-                  TERMINAR
+                  {isAnalyzing
+                    ? "Analizando con IA..."
+                    : "🤖 Analizar mi respuesta"}
                 </button>
               )}
             </div>
