@@ -148,12 +148,12 @@ export default function Features() {
                       nivel
                     );
                   }}
-                  // disabled={isAnalyzing || !freeAnswer.trim()}
-                  // className={`mt-3 w-full rounded-lg py-2 px-4 text-white transition ${
-                  //   isAnalyzing || !freeAnswer.trim()
-                  //     ? "bg-green-400 cursor-not-allowed"
-                  //     : "bg-green-500 hover:bg-green-600"
-                  // }`}
+                  disabled={isAnalyzing || !freeAnswer.trim()}
+                  className={`mt-3 w-full rounded-lg py-2 px-4 text-white transition ${
+                    isAnalyzing || !freeAnswer.trim()
+                      ? "bg-green-400 cursor-not-allowed"
+                      : "bg-green-500 hover:bg-green-600"
+                  }`}
                 >
                   {isAnalyzing
                     ? "Analizando con IA..."
