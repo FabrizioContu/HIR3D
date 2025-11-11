@@ -5,7 +5,7 @@ export function useQuestions() {
   const [questions, setQuestions] = useState([]);
   const [currentQuestion, setCurrentQuestion] = useState(0);
   const [isGenerating, setIsGenerating] = useState(false);
-  const [setFreeAnswer] = useState("");
+  const [freeAnswer, setFreeAnswer] = useState("");
   const [writing, setWriting] = useState(false);
 
   const createQuestions = (especialidad, nivel) => {
@@ -24,7 +24,7 @@ export function useQuestions() {
     if (currentQuestion < questions.length - 1) {
       setCurrentQuestion(currentQuestion + 1);
       setWriting(false);
-      setFreeAnswer("");
+      setFreeAnswer(freeAnswer);
     }
   };
 
@@ -32,7 +32,7 @@ export function useQuestions() {
     if (currentQuestion > 0) {
       setCurrentQuestion(currentQuestion - 1);
       setWriting(false);
-      setFreeAnswer("");
+      setFreeAnswer(freeAnswer);
     }
   };
 
